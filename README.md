@@ -1,4 +1,4 @@
-# An Explainable AI Framework for Classifying Kubernetes Workloads for Quantum, Hybrid, and Classical Execution
+# AI-Driven Workload Analysis and Intelligent Resource Recommendation: An Explainable AI Architecture for Classical, IBM Z, and Quantum-Hybrid Computing
 
 **Student:** Olena Khyzhniak 
 **Supervisor:** John Rellis
@@ -9,9 +9,9 @@
 
 ## 2. Introduction
 
-This document presents the project proposal and initial research for AI Q-Migrate Z, submitted in partial fulfilment of the requirements for a Bachelor of Science (Honours) in Applied Computing (Cloud and Networks Stream) at South East Technological University.
+This document presents the project proposal and initial research, submitted in partial fulfilment of the requirements for a Bachelor of Science (Honours) in Applied Computing (Cloud and Networks Stream) at South East Technological University.
 
-The project explores the intersection of three emerging technology domains: Explainable Artificial Intelligence (XAI), hybrid quantum-classical computing, and enterprise cloud infrastructure on IBM Z. The aim is to design and develop a software framework capable of analysing existing Kubernetes-based applications and producing an explainable, reasoned assessment of each component's suitability for migration to a hybrid quantum-classical environment hosted on IBM Z.
+The aim of this project is to design and develop an intelligent architecture that runs multiple workloads on a Kubernetes cluster, collects real-time performance metrics using Prometheus and Grafana, and employs an Explainable AI component to analyse workload behaviour and recommend the most appropriate computing resources and platforms. Based on metrics such as CPU and memory utilisation, I/O activity, transaction throughput, and computational intensity, the AI component will identify potential bottlenecks and provide reasoned recommendations. These may include optimising existing classical infrastructure, considering IBM Z for transaction-intensive and I/O-heavy workloads, or exploring hybrid quantum-classical computing for suitable computationally complex problems. The system will also explain the reasoning behind each recommendation, helping users understand not only what resources may be required, but why a particular computing platform may be more suitable.
 
 Given that this area spans topics typically explored at postgraduate level, the project scope will be refined in close consultation with the supervising lecturer, John Rellis, to ensure it remains achievable within the constraints of a BSc (Honours) final year project.
 
@@ -50,12 +50,14 @@ AI Q-Migrate Z follows the same pattern but adds a quantum dimension: it identif
 
 ### Project Scope
 
-The framework will be deployed and demonstrates the following:
+The project will cover the following areas:
 
-- Displays three real workloads running on the cluster
-- Classifies each workload: classical, IBM Z classical, or hybrid quantum
-- Explains the classification reasoning using XAI (feature importance)
-- For hybrid quantum workloads, executes a real Qiskit circuit and displays the result
+- Deploy and run three representative workloads on a MicroK8s Kubernetes cluster, with real-time performance monitoring using Prometheus and Grafana.
+- Integrate an LLM (IBM Granite via watsonx.ai) to analyse collected metrics and workload behaviour independently for each workload.
+- Evaluate workload characteristics, including CPU and memory utilisation, I/O activity, transaction throughput, and computational intensity, to identify resource requirements and potential performance bottlenecks.
+- Generate AI-driven recommendations on the most suitable computing environment for each workload, considering classical infrastructure, IBM Z, and hybrid quantum-classical computing where appropriate.
+- Provide explainable recommendations, describing the metrics and workload characteristics behind each decision rather than simply assigning a workload to a computing platform.
+- Present monitoring data, AI-generated analysis, and resource recommendations through a Grafana dashboard or a lightweight web interface accessible at olenaonline.eu/q-migrate.
 
 ---
 
