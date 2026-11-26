@@ -7,7 +7,7 @@
 
 ---
 
-## 2. Introduction
+## Introduction
 
 This document presents the project proposal and initial research, submitted in partial fulfilment of the requirements for a Bachelor of Science (Honours) in Applied Computing (Cloud and Networks Stream) at South East Technological University.
 
@@ -19,7 +19,7 @@ This document is a living record, intended to be updated and extended incrementa
 
 ---
 
-## 3.3 Practical Implementation
+## Practical Implementation
 
 ### Target User
 
